@@ -4,6 +4,7 @@
         <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
                 data-sap-ui-libs="sap.m,sap.ui.layout"
                 data-sap-ui-theme="sap_bluecrystal"
+                data-sap-ui-bindingSyntax="complex"
                 data-sap-ui-resourceroots='{
                     "mickey":"./"
                 }'>
@@ -16,7 +17,7 @@
             //     viewName: "mickey.view.Main",
             //     type: "JS"
             // });
-            var oView = new sap.ui.view({
+            var oView = new sap.ui.view("myView",{
                 viewName: "mickey.view.MyXML",
                 type: "XML"
             });
